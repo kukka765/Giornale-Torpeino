@@ -1,49 +1,30 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #fdfdf9;
   margin: 0;
-  background-color: #fdfaf6;
-  color: #222;
+  padding: 0;
 }
 
 header {
-  background-color: #0c2543;
-  padding: 20px;
-  text-align: center;
+  background-color: #0b2a4a;
   color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
-.logo {
-  font-size: 3.2em;
-  font-weight: 900;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-  padding: 20px 0 0 0;
-}
-
-.sottotitolo {
-  font-size: 1.1em;
-  font-style: italic;
-  font-weight: 400;
-  color: #ccc;
-  margin-top: 10px;
-  line-height: 1.2em;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
-  margin: 10px 0;
+  margin: 1rem 0 0;
   display: flex;
   justify-content: center;
-  gap: 30px;
-}
-
-nav ul li {
-  display: inline;
+  gap: 2rem;
 }
 
 nav ul li a {
@@ -52,45 +33,39 @@ nav ul li a {
   font-weight: bold;
 }
 
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 main {
-  padding: 20px;
+  padding: 2rem;
 }
 
-.featured-article {
-  background-color: #ffeecf;
-  border-left: 8px solid #e13030;
-  padding: 20px;
-  margin-bottom: 30px;
+main h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
-.featured-article h1 {
-  color: #cc2222;
-  margin-bottom: 10px;
+main ul {
+  padding-left: 1.5rem;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+main ul li a {
+  font-size: 1.3em;
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #003366;
+  text-decoration: none;
 }
 
-.articles article {
-  background-color: #fff;
-  padding: 20px;
-  border-left: 8px solid orange;
-  margin-bottom: 15px;
-}
-
-.sidebar {
-  background-color: #fff;
-  padding: 20px;
-  border-left: 8px solid #5588aa;
+main ul li a:hover {
+  text-decoration: underline;
 }
 
 footer {
   background-color: #222;
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 1rem;
+  margin-top: 2rem;
 }
