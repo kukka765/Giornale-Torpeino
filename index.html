@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Giornale Torpeino</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    .card small {
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .sidebar {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #f1f1f1;
+      border-left: 4px solid #0b2a4a;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -23,23 +48,42 @@
   <main>
     <section style="background-color: #fff1e0; padding: 1.5rem; border-left: 6px solid #cc0000; margin: 2rem 0;">
       <h2 style="color: #cc0000;">In evidenza: "La Pro Loco e le iniziative del 2025"</h2>
+      <p><strong>Scopri tutte le attività organizzate quest’anno a Torpè tra cultura, gastronomia e spettacoli.</strong></p>
     </section>
 
     <section>
       <h2>Tutti gli articoli</h2>
+
+      <div class="card">
+        <img src="https://placehold.co/600x300?text=Parco+Comunale" alt="Parco comunale">
+        <h3><a href="parco.html">Nuovo volto per il parco comunale</a></h3>
+        <small>Pubblicato il 3 aprile 2025 alle 10:00</small>
+        <p>Il parco sarà rinnovato con nuovi spazi verdi, giochi per bambini e percorsi salute.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://placehold.co/600x300?text=Pro+Loco" alt="Pro Loco">
+        <h3><a href="proloco.html">La Pro Loco e le iniziative del 2025</a></h3>
+        <small>Pubblicato il 4 aprile 2025 alle 21:30</small>
+        <p>Un calendario ricco di eventi, mostre e attività per riscoprire il cuore del paese.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://placehold.co/600x300?text=Peppe+Gossip" alt="Peppe gossip">
+        <h3><a href="peppe.html">Peppe beccato di nuovo! (Gossip)</a></h3>
+        <small>Pubblicato il 3 aprile 2025 alle 10:15</small>
+        <p>Scene esilaranti fuori dal bar storico. “Volevo solo un bufalo bill!” ha dichiarato.</p>
+      </div>
+    </section>
+
+    <section class="sidebar">
+      <h3>Lo sapevi che...?</h3>
+      <p>Nel 1965 a Torpè fu girato un cortometraggio diventato virale nel mondo sardo.</p>
+
+      <h3>Articoli più letti</h3>
       <ul>
-        <li>
-          <a href="parco.html">Nuovo volto per il parco comunale</a><br />
-          <small>Pubblicato il 3 aprile 2025 alle 10:00</small>
-        </li>
-        <li>
-          <a href="proloco.html">La Pro Loco e le iniziative del 2025</a><br />
-          <small>Pubblicato il 4 aprile 2025 alle 21:30</small>
-        </li>
-        <li>
-          <a href="peppe.html">Peppe beccato di nuovo! (Gossip)</a><br />
-          <small>Pubblicato il 3 aprile 2025 alle 10:15</small>
-        </li>
+        <li><a href="peppe.html">Peppe beccato di nuovo!</a></li>
+        <li><a href="proloco.html">La Pro Loco e le iniziative del 2025</a></li>
       </ul>
     </section>
   </main>
