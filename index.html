@@ -5,6 +5,37 @@
     <meta charset="UTF-8">
     <title>Giornale Torpeino</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .in-evidenza {
+            background: linear-gradient(to right, #e0f7fa, #ffffff);
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .in-evidenza h2 {
+            color: #00796b;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .in-evidenza p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .btn-leggi {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn-leggi:hover {
+            background-color: #004d40;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,9 +43,11 @@
         <p>Il giornale che racconta il nostro paese</p>
     </header>
     <main>
-        <section class="articoli">
-            <h2>Articoli recenti</h2>
-            <p>Nessun articolo al momento. Torna a trovarci presto!</p>
+        <section class="in-evidenza">
+            <h2>In evidenza: La Pro Loco valorizza il paese</h2>
+            <p>Un viaggio tra tradizioni, eventi e comunità. La Pro Loco si conferma cuore pulsante della vita socioculturale locale, 
+            promuovendo iniziative che uniscono passato e futuro.</p>
+            <a class="btn-leggi" href="proloco_stilizzato.html">Leggi l'articolo completo</a>
         </section>
     </main>
 </body>
