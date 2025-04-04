@@ -6,6 +6,21 @@
     <title>Giornale Torpeino</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        nav {
+            background-color: #00796b;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         .in-evidenza {
             background: linear-gradient(to right, #e0f7fa, #ffffff);
             padding: 30px;
@@ -42,12 +57,24 @@
         <h1>Giornale Torpeino</h1>
         <p>Il giornale che racconta il nostro paese</p>
     </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#cultura">Cultura</a>
+        <a href="#gossip">Gossip</a>
+        <a href="#attualita">Attualità</a>
+    </nav>
     <main>
-        <section class="in-evidenza">
+        <section class="in-evidenza" id="cultura">
             <h2>In evidenza: La Pro Loco valorizza il paese</h2>
             <p>Un viaggio tra tradizioni, eventi e comunità. La Pro Loco si conferma cuore pulsante della vita socioculturale locale, 
             promuovendo iniziative che uniscono passato e futuro.</p>
             <a class="btn-leggi" href="proloco_stilizzato.html">Leggi l'articolo completo</a>
+        </section>
+        <section id="gossip">
+            <!-- Placeholder per sezione Gossip -->
+        </section>
+        <section id="attualita">
+            <!-- Placeholder per sezione Attualità -->
         </section>
     </main>
 </body>
