@@ -20,7 +20,6 @@
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            text-align: center;
         }
         h2 {
             color: #007BFF;
@@ -29,11 +28,21 @@
         p {
             font-size: 1.2em;
         }
+        a.article-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a.article-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
-    <!-- INIZIO MENU -->
+    <!-- MENU -->
     <div style="background-color: #007BFF; padding: 20px; text-align: center;">
         <h1 style="color: white; font-size: 48px; margin: 0;">Giornale Torpeino</h1>
         <p style="color: white; font-size: 18px; margin: 0;">Il giornale che racconta il nostro paese</p>
@@ -46,11 +55,10 @@
             <a href="attualita.html" style="color: white; padding: 14px 20px; text-decoration: none;">Attualità</a>
         </div>
     </div>
-    <!-- FINE MENU -->
 
     <div class="container">
         <h2>Sezione Gossip</h2>
-        <p>📝 Non ci sono ancora articoli per il momento. Torna presto!</p>
+        <a class="article-link" href="ubriaco.html">🗞️ Clamoroso fuori dalla pizzeria: serata storta per l'uomo del bar di Pilosu</a>
     </div>
 </body>
 </html>
