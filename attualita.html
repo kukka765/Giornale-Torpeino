@@ -7,50 +7,99 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #111;
             margin: 0;
             padding: 0;
         }
-        .container {
-            max-width: 800px;
-            margin: 60px auto;
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        .header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
             text-align: center;
         }
-        h2 {
-            color: #007BFF;
-            font-size: 2em;
+        .menu {
+            background-color: #444;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .menu a {
+            color: #eee;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .menu a:hover {
+            background-color: #666;
+        }
+        .menu a.active {
+            background-color: #000;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #111;
+        }
+        em {
+            color: #555;
         }
         p {
-            font-size: 1.2em;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .highlight {
+            background-color: #f9f9f9;
+            border-left: 4px solid #999;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        a.article-link {
+            display: block;
+            margin-top: 15px;
+            font-size: 1.1em;
+            color: #333;
+            text-decoration: none;
+        }
+        a.article-link:hover {
+            text-decoration: underline;
+        }
+        .btn-evidenza {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .btn-evidenza:hover {
+            background-color: #333;
         }
     </style>
 </head>
 <body>
-
-    <!-- INIZIO MENU -->
-    <div style="background-color: #007BFF; padding: 20px; text-align: center;">
-        <h1 style="color: white; font-size: 48px; margin: 0;">Giornale Torpeino</h1>
-        <p style="color: white; font-size: 18px; margin: 0;">Il giornale che racconta il nostro paese</p>
+    <div class="header">
+        <h1>Giornale Torpeino</h1>
+        <p>Il giornale che racconta il nostro paese</p>
     </div>
-    <div style="background-color: #333; overflow: hidden;">
-        <div style="display: flex; justify-content: center;">
-            <a href="index.html" style="color: white; padding: 14px 20px; text-decoration: none;">Home</a>
-            <a href="cultura.html" style="color: white; padding: 14px 20px; text-decoration: none;">Cultura</a>
-            <a href="gossip.html" style="color: white; padding: 14px 20px; text-decoration: none;">Gossip</a>
-            <a href="attualita.html" style="color: white; padding: 14px 20px; text-decoration: none;">Attualità</a>
-        </div>
+    <div class="menu">
+        <a href="index.html" class="">Home</a>
+        <a href="cultura.html" class="">Cultura</a>
+        <a href="gossip.html" class="">Gossip</a>
+        <a href="attualita.html" class="active">Attualità</a>
     </div>
-    <!-- FINE MENU -->
-
     <div class="container">
-        <h2>Sezione Attualità</h2>
-        <p>📝 Non ci sono ancora articoli per il momento. Torna presto!</p>
+        
+<h2>Sezione Attualità</h2>
+<p>📝 Non ci sono ancora articoli per il momento. Torna presto!</p>
+
     </div>
 </body>
 </html>
